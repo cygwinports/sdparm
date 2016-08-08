@@ -1,0 +1,16 @@
+NAME="sdparm"
+VERSION=1.10
+RELEASE=1
+CATEGORY="System"
+SUMMARY="SCSI device parameter utility"
+DESCRIPTION="The sdparm utility accesses SCSI device parameters. When the
+SCSI device is a disk, sdparm's role is similar to its namesake: the hdparm
+utility which is primarily designed for ATA disks.  More generally, sdparm can
+be used to access parameters on any device that uses a SCSI command set. Apart
+from SCSI disks, such devices include CD/DVD drives, SCSI and ATAPI tape drives
+and SCSI enclosures."
+HOMEPAGE="http://sg.danny.cz/sg/sdparm.html"
+SRC_URI="http://sg.danny.cz/sg/p/${NAME}-${VERSION}.tar.xz"
+__PATCH_URI="
+	1.42-vpath.patch
+"
